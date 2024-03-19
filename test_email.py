@@ -3,8 +3,8 @@ import email.message
 
 
 def html_content():
-    read_html_content = open('message.html')
-    data = read_html_content.read()
+    with open('message.html') as read_html_content:
+        data = read_html_content.read()
     return data
 
 
